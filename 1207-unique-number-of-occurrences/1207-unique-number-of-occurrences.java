@@ -8,8 +8,8 @@ class Solution {
             else
                 map.put(i,1);
         }
-        for(int i : map.values()){
-            set.add(i);
+        for(int i : map.keySet()){
+            set.add(map.get(i));
         }
         if (set.size()!=map.size()){
             return false;
