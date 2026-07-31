@@ -7,7 +7,6 @@ class Solution {
             else
                 sb.append(ch);
         }
-        System.out.println(sb);
         return sb.toString();
     }
 }
