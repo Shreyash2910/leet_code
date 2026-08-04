@@ -1,12 +1,16 @@
 class Solution {
     public List<Integer> findMissingElements(int[] nums) {
-        TreeSet <Integer> set = new TreeSet<>();
+        HashSet <Integer> set = new HashSet<>();
         List<Integer> list = new ArrayList<>();
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
         for(int i : nums){
             set.add(i);
+            if(i<min)
+                min=i;
+            if(i>max)
+                max=i;
         }
-        int min= set.first();
-        int max= set.last();
         while (min<max){
             min++;
             if(!set.contains(min))
