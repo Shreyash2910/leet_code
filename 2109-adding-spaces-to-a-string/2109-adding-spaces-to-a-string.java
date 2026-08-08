@@ -7,7 +7,7 @@ class Solution {
             start=spaces[i];
             result.append(" ");
         }
-        result.append(s.substring(start,s.length()));
+        result.append(s.substring(start));
         return result.toString();
     }
 }
