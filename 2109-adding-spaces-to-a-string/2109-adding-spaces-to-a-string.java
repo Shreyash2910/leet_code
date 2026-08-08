@@ -6,9 +6,8 @@ class Solution {
             result.append(s.substring(start,spaces[i]));
             start=spaces[i];
             result.append(" ");
-            if(i==spaces.length-1)
-                result.append(s.substring(start,s.length()));
         }
+        result.append(s.substring(start,s.length()));
         return result.toString();
     }
 }
