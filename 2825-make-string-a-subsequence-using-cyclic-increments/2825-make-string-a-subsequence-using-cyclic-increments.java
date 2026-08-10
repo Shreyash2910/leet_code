@@ -11,7 +11,6 @@ class Solution {
                 next=(char)(ch1+1);
             if(ch1==ch2||next == ch2)
                 count++;
-            System.out.println(count);
             if(count==str2.length())
             return true;
         }
