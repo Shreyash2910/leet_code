@@ -12,7 +12,6 @@
 public class Solution {
     public ListNode detectCycle(ListNode head) {
         List<ListNode> list = new ArrayList<>();
-        int target=0;
         ListNode slow = head;
         ListNode fast= head;
         list.add(slow);
