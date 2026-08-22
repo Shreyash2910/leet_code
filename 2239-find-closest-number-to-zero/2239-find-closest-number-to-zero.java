@@ -1,7 +1,7 @@
 class Solution {
     public int findClosestNumber(int[] nums) {
         int min=nums[0];
-        int result=0;
+        int result;
         for (int i =1; i<nums.length;i++){
             result= nums[i];
             if(Math.abs(result)<Math.abs(min)){
