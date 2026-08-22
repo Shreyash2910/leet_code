@@ -7,8 +7,8 @@ class Solution {
             if(Math.abs(result)<Math.abs(min)){
                 min = nums[i];
             }
-            else if(Math.abs(result)==Math.abs(min)){
-                min = Math.max(min, result);
+            else if(Math.abs(result)==Math.abs(min)&& result>min){
+                min = result;
             }
         }
         return min;
