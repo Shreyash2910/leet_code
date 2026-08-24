@@ -11,6 +11,5 @@ class Solution {
                 nums1[k--] = nums2[j--];
             }
         }
-        System.out.println(nums1);
     }
 }
