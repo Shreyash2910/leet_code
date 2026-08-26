@@ -4,5 +4,5 @@ product_name,
 year,
 price
 From Sales s
-Inner Join Product p 
+Join Product p 
 ON s.product_id = p.product_id;
